@@ -12,6 +12,7 @@ body {
 	font-weight: normal;
 	font-size: 18px;
 	text-rendering: optimizeLegibility;
+	color: #FF553B;
 }
 
 /***************** Inter Tight *****************/
@@ -115,22 +116,33 @@ p {
 
 }
 a {
-	text-decoration: ;
-	color: ;
+	text-decoration: none;
+	color: #FF553B;
 }
 a:hover {
 	opacity: .7;
 	text-decoration: none;
-	color: #111;
+	color: #111111;
 }
 
 /***************** Menu *****************/
 .menu {
 	border: 1px solid red;
 	position: fixed;
+	display: flex;
+	width: 100%;
+	padding: .5rem;
 }
 .menu_mobile {
 	display: none;
+}
+.logo {}
+.logoSmall {}
+.menuItems {
+	margin-left: auto;
+}
+.menuItemsLinks {
+	display: flex;
 }
 
 nav ul {
@@ -139,7 +151,23 @@ nav ul {
 
 nav li {}
 
+
+
+
+
+/***************** Main *****************/
+.link_more {
+	font-family: 'IBM Plex Mono', monospace;
+	text-transform: uppercase;
+	font-size: .8vw;
+}
+
+
+
 /***************** Footer *****************/
+
+
+
 
 
 

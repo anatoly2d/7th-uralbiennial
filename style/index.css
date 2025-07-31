@@ -2,3 +2,28 @@
 	height: 100dvh;
 	background-color: #ccc;
 }
+
+.cityMenu {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: .5rem;
+	width: 100%;
+}
+.cityMenuItem {
+	width: 25%;
+}
+
+.about_long_row {
+	display: flex;
+}
+
+/*.col_1 {
+	width: 100%;
+}
+.col_2 {
+	width: 50%;
+}
+.col_4 {
+	width: 25%;
+} */
