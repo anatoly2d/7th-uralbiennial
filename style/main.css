@@ -30,6 +30,35 @@ body {
     src: url(../public/fonts/InterTight-Regular.woff2);
 }
 
+h1 {
+	font-family: 'Inter_Tight'; 
+	font-weight: 600;
+	font-size: 3vw;
+	letter-spacing: .1rem;
+	line-height: ;
+}
+h2 {}
+h3 {}
+p {
+	font-family: ;
+	font-size: ;
+	font-weight: ;
+	line-height: ;
+	margin-bottom: ;
+	margin-top: ;
+
+}
+a {
+	text-decoration: ;
+	color: ;
+}
+a:hover {
+	opacity: .7;
+	text-decoration: none;
+	color: #111;
+}
+
+
 .menu {
 	border: 1px solid red;
 	position: fixed;
@@ -37,3 +66,13 @@ body {
 .menu_mobile {
 	display: none;
 }
+
+nav ul {
+
+}
+
+nav li {}
+
+
+
+
