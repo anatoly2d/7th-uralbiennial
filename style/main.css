@@ -7,45 +7,111 @@ input,textarea,p,blockquote,th,td,hr,figure, figcaption{
     margin: 0;
     padding: 0;
 }
-
 body {
-	font-family: 'Inter_Tight', helvetica, arial, sans-serif;
+	font-family: 'Inter Tight', helvetica, arial, sans-serif;
 	font-weight: normal;
 	font-size: 18px;
 	text-rendering: optimizeLegibility;
 }
 
-/*@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
-
-.inter-tight-<uniquifier> {
-  font-family: "Inter Tight", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}*/
-
+/***************** Inter Tight *****************/
 @font-face {
-    font-family: 'Inter_Tight';  
-    src: url(../public/fonts/InterTight-Regular.woff);
-    src: url(../public/fonts/InterTight-Regular.woff2);
+	font-display: swap;
+    font-family: 'Inter Tight';  
+    font-style: normal;
+    font-weight: 300;
+    src: url('../public/fonts/Inter_Tight/inter-tight-v8-cyrillic_latin-300.woff2') format('woff2'); 
+}
+@font-face {
+	font-display: swap;
+    font-family: 'Inter Tight';  
+    font-style: normal;
+    font-weight: 400;
+    src: url('../public/fonts/Inter_Tight/inter-tight-v8-cyrillic_latin-regular.woff2') format('woff2'); 
+}
+@font-face {
+	font-display: swap;
+    font-family: 'Inter Tight';  
+    font-style: normal;
+    font-weight: 500;
+    src: url('../public/fonts/Inter_Tight/inter-tight-v8-cyrillic_latin-500.woff2') format('woff2'); 
+}
+@font-face {
+	font-display: swap;
+    font-family: 'Inter Tight';  
+    font-style: normal;
+    font-weight: 600;
+    src: url('../public/fonts/Inter_Tight/inter-tight-v8-cyrillic_latin-600.woff2') format('woff2'); 
+}
+@font-face {
+	font-display: swap;
+    font-family: 'Inter Tight';  
+    font-style: normal;
+    font-weight: 700;
+    src: url('../public/fonts/Inter_Tight/inter-tight-v8-cyrillic_latin-700.woff2') format('woff2'); 
+}
+@font-face {
+	font-display: swap;
+    font-family: 'Inter Tight';  
+    font-style: normal;
+    font-weight: 800;
+    src: url('../public/fonts/Inter_Tight/inter-tight-v8-cyrillic_latin-800.woff2') format('woff2'); 
+}
+@font-face {
+	font-display: swap;
+    font-family: 'Inter Tight';  
+    font-style: normal;
+    font-weight: 900;
+    src: url('../public/fonts/Inter_Tight/inter-tight-v8-cyrillic_latin-900.woff2') format('woff2'); 
 }
 
+/***************** IBM Mono *****************/
+@font-face {
+	font-display: swap;
+    font-family: 'IBM_mono';  
+    font-style: normal;
+    font-weight: 400;
+    src: url('../public/fonts/IBM_mono/ibm-plex-mono-v19-cyrillic_latin-regular.woff2') format('woff2'); 
+}
+@font-face {
+	font-display: swap;
+    font-family: 'IBM_mono';  
+    font-style: normal;
+    font-weight: 500;
+    src: url('../public/fonts/IBM_mono/ibm-plex-mono-v19-cyrillic_latin-500.woff2') format('woff2'); 
+}
+@font-face {
+	font-display: swap;
+    font-family: 'IBM_mono';  
+    font-style: normal;
+    font-weight: 600;
+    src: url('../public/fonts/IBM_mono/ibm-plex-mono-v19-cyrillic_latin-600.woff2') format('woff2'); 
+}
+@font-face {
+	font-display: swap;
+    font-family: 'IBM_mono';  
+    font-style: normal;
+    font-weight: 700;
+    src: url('../public/fonts/IBM_mono/ibm-plex-mono-v19-cyrillic_latin-700.woff2') format('woff2'); 
+}
+
+/***************** Texts *****************/
 h1 {
-	font-family: 'Inter_Tight'; 
+	font-family: 'Inter Tight'; 
 	font-weight: 600;
 	font-size: 3vw;
 	letter-spacing: .1rem;
-	line-height: ;
+	line-height: 1;
 }
 h2 {}
 h3 {}
 p {
-	font-family: ;
-	font-size: ;
-	font-weight: ;
-	line-height: ;
-	margin-bottom: ;
-	margin-top: ;
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: .9vw;
+	font-weight: 500;
+	line-height: 1;
+	margin-bottom: .5rem;
+	margin-top: .5rem;
 
 }
 a {
@@ -58,7 +124,7 @@ a:hover {
 	color: #111;
 }
 
-
+/***************** Menu *****************/
 .menu {
 	border: 1px solid red;
 	position: fixed;
@@ -73,6 +139,7 @@ nav ul {
 
 nav li {}
 
+/***************** Footer *****************/
 
 
 
