@@ -1,43 +1,61 @@
 <!DOCTYPE html>
-<html lang="Ru-ru">
+<html lang="ru-RU">
     <head> 
         <meta charset="UTF-8">
-        <title>The Ural Industrial Biennial Of The Contemorary Art</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-        <meta name="description" content="The Ural Industrial Biennial Of The Contemorary Art">
-        <meta name="keywords" content="">
+        <title>7-я Уральская индустриальная биеннале современного искусства</title>
+        <meta name="description" content="Одно из крупнейших в России событий в сфере современной культуры, которое проходит в Екатеринбурге и на территории Уральского региона с 2010 года. Проект посвящен индустриальности и рассматривает ее не только как наследие, но и как важную часть современной жизни на Урале. ">
+        <meta name="keywords" content="Уральская, индустриальная, биеннале, современного, искусства, Арт-резеденции, Магнитогорск, Миасс, Рефтинский, Пороги">
+        <meta name="author" content="ЗА АРТ">
+        <meta property="og:title" content="7-я Уральская индустриальная биеннале современного искусства"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:locale" content="ru_RU">
+        <meta property="og:url" content="https://uralbiennial.ru"/>
+        <meta property="og:site_name" content="uralbiennial.ru"/>
+        <meta property="og:description" content="Дизайн и разработка сайта 6-й Уральской индустриальной биеннале современного искусства, ее большой и структурно разнообразной программе с понятным и дружественным календарем"/>
+        <meta property="og:image" content="./public/images/uralbiennial.jpg"/>
+        <meta property="og:image:alt" content="">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:secure_url" content="https://uralbiennial.ru/public/images/uralbiennial.jpg.jpg">
+        <meta property="vk:image" content="./public/images/uralbiennial.jpg">
+        <link rel="image_src" href="./public/images/uralbiennial.jpg" />
+        <link rel="manifest" href="./site.webmanifest">
     <!-- styles -->    
         <link rel="stylesheet" href="./style/main.css"> 
         <link rel="stylesheet" href="./style/index.css"> 
+    <!-- js -->     
+        <script type="text/javascript" src="./utils/menu.js"></script>
     </head>
     <body>
-        <header>
-            <div class="menu">
-                <a href="/" class="logo"></a>
-                <a href="/" class="logoSmall"></a>
-                <nav class="menuItems">
-                    <ul>
-                        <li>Арт-резеденции</li>
-                        <li>Города<span>4</span></li>
-                        <li>О биеннале</li>
+        <header class="header" role="banner"> 
+            <div class="header-container">
+                <a href="/" class="logo">
+                  <img src="./public/images/logo-normal.svg" class="logo-normal">
+                  <img src="./public/images/logo-small.svg" class="logo-small">
+                  <!-- <img src="logo-normal.svg" alt="uralbiennial" class="logo-normal">
+                  <img src="logo-small.svg" alt="uralbiennial" class="logo-small"> -->
+                </a>
+                <nav class="nav" aria-label="Основное меню">
+                    <button class="mobile-menu-toggle" 
+                          aria-expanded="false" 
+                          aria-controls="main-nav"
+                          aria-label="Открыть меню">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </button>
+                    <ul class="nav-list" id="main-nav" role="menubar">
+                        <li role="none"><a href="./art-residence" role="menuitem" class="menuItem">Арт-резиденции</a></li>
+                        <li role="none"><a href="./cities" class="menuItem" role="menuitem">Города <span>4</span></a></li>
+                        <li role="none"><a href="./about" class="menuItem" role="menuitem">О биеннале</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="menu_mobile">
-                <div class="menu_mobile_up">
-                    <a href="/" class="logo"></a>
-                    <a href="/" class="logoSmall"></a>
-                    <div class="close"></div>
-                </div>
-                <nav class="menuItems">
-                    <ul class="menuItemsLinks">
-                        <li>Арт-резеденции</li>
-                        <li>Города<span>4</span></li>
-                        <li>О биеннале</li>
-                    </ul>
-                </nav>
-            </div>
+            <div class="header-border"></div>
         </header>
+
         <div class="page">
             <div class="intro">
                 <div class="cityMenu">
@@ -46,7 +64,6 @@
                     <a href="./reftinskiy" class="cityMenuItem">Рефтинский</a>
                     <a href="./porogi" class="cityMenuItem">Пороги</a>
                 </div>
-
                 <video class="mainVideo"
                 loop=""
                 preload="auto"
@@ -54,7 +71,7 @@
                 autoplay=""
                 playsinline=""
                 style="width: 100%,
-                background: transparent url('') no-repeat center center"
+                background: transparent url('./public/video/4751105_Pharmaceutical_Production_3840x2160.mp4') no-repeat center center"
                 src=""
                 type="">
             </video>
@@ -63,30 +80,37 @@
             <div class="about_short"></div>
                 <h1>Арт-резиденции VII уральской индустриальной биеннале современного искусства <span></span>, которые пройдут в четырех городах Уральского региона, Уральского региона, под основной темой — наука и энергия.</h1>
                 <a href="./about" class="link_more">Подробнее<span></span></a>
+                <button class="btn_text"><a href="./about" class="link_more">Подробнее<span></span></a></button>
             <div class="map"></div>
-            <div class="about_long"></div>
-            <div class="about_long_row">
-                <div class="col_4">
-                    <p>Уральская индустриальная биеннале – это одно из крупнейших в России событий в сфере современной культуры, которое проходит в Екатеринбурге и на территории Уральского региона с 2010 года. Проект посвящен индустриальности и рассматривает ее не только как наследие, но и как важную часть современной жизни на Урале. В этом материале разберемся, что такое биеннале, почему она индустриальная и чем может быть интересна. Само слово «биеннале» подсказывает, что это событие проходит раз в два года. Так стали называть художественные выставки и проекты в сфере современного искусства, которые проходят каждые два года. В России проводится несколько регулярных биеннале: первой стала Красноярская биеннале, есть также Ширяевская (в Самаре, с 1999 г.), Московская (с 2005 г.) и, собственно, Уральская (с 2010 г.). У этого проекта международный статус. Это подтверждает география художников: с 2010 г. в ней участвовали художники и кураторы из 65 стран и регионов. Также Уральская биеннале первой из российских вступила в Международную биеннальную ассоциацию (IBA).</p>
+            <div class="about_long">
+                <div class="about_long_row">
+                    <div class="col">
+                        <p>Уральская индустриальная биеннале&nbsp;&mdash; это одно из&nbsp;крупнейших в&nbsp;России событий в&nbsp;сфере современной культуры, которое проходит в&nbsp;Екатеринбурге и&nbsp;на&nbsp;территории Уральского региона с&nbsp;2010&nbsp;года. Проект посвящен индустриальности и&nbsp;рассматривает ее&nbsp;не&nbsp;только как наследие, но&nbsp;и&nbsp;как важную часть современной жизни на&nbsp;Урале. В&nbsp;этом материале разберемся, что такое биеннале, почему она индустриальная и&nbsp;чем может быть интересна. Само слово &laquo;биеннале&raquo; подсказывает, что это событие проходит раз в&nbsp;два года. Так стали называть художественные выставки и&nbsp;проекты в&nbsp;сфере современного искусства, которые проходят каждые два года. В&nbsp;России проводится несколько регулярных биеннале: первой стала Красноярская биеннале, есть также Ширяевская (в&nbsp;Самаре, с&nbsp;1999&nbsp;г.), Московская (с&nbsp;2005&nbsp;г.) и, собственно, Уральская (с&nbsp;2010&nbsp;г.). У&nbsp;этого проекта международный статус. Это подтверждает география художников: с&nbsp;2010&nbsp;г.&nbsp;в&nbsp;ней участвовали художники и&nbsp;кураторы из&nbsp;65&nbsp;стран и&nbsp;регионов. Также Уральская биеннале первой из&nbsp;российских вступила в&nbsp;Международную биеннальную ассоциацию (IBA).</p>
+                    </div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col">
+                        <p>Каждый выпуск Уральской биеннале состоит из&nbsp;множества событий и&nbsp;проектов: выставки современного искусства, программа арт-резиденции, образовательные курсы, театральные постановки, концерты и&nbsp;кинопоказы, конференции, исследования и&nbsp;публикации, многое другое. <br>
+                        Основной проект&nbsp;&mdash; это центральная выставка, которая раскрывает тему выпуска с&nbsp;разных сторон и&nbsp;разрабатывается приглашенным куратором. Она проходит в&nbsp;невыставочных пространствах Екатеринбурга: на&nbsp;территории закрытых и&nbsp;действующих заводов, в&nbsp;исторических памятниках. Программа арт-резиденций и&nbsp;специальные проекты работают не&nbsp;только в&nbsp;столице Урала, но&nbsp;и&nbsp;с&nbsp;другими городами. С&nbsp;2010 года биеннале проходила в&nbsp;33&nbsp;городах пяти областей&nbsp;&mdash; Оренбургской, Свердловской, Тюменской, Челябинской, а&nbsp;также Пермского края. В&nbsp;2025 году программа арт-резиденций Уральской биеннале проходит в&nbsp;Свердловской и&nbsp;Челябинской областях. Подробнее об&nbsp;этом&nbsp;&mdash; по&nbsp;ссылке.</p>
+                    </div>
                 </div>
-                <div class="col_4"></div>
-                <div class="col_4"></div>
-                <div class="col_4"></div>
-            </div>
-            <div class="about_long_row">
-                 <div class="col_1"></div>
-            </div>
-            <div class="about_long_row">
-                <div class="col_4"></div>
-                <div class="col_4"></div>
-                <div class="col_4"></div>
-                <div class="col_4"></div>
+                <div class="about_long_row">
+                     <div class="col">
+                         <p>Почему Уральская биеннале&nbsp;&mdash; индустриальная. Акцент на&nbsp;индустриальности связан с&nbsp;особенностью самого Урала. В&nbsp;нашем регионе большое индустриальное наследие, которое заложило основу для современной жизни. Для множества жителей Урала индустриальность&nbsp;&mdash; это не&nbsp;только прошлое, но&nbsp;и&nbsp;настоящее. Отличительная черта Уральской биеннале&nbsp;&mdash; взаимодействие с&nbsp;заводами и&nbsp;культурными институциями. Художники, кураторы, а&nbsp;за&nbsp;ними и&nbsp;зрители приходят не&nbsp;только на&nbsp;остановленные, но&nbsp;и&nbsp;на&nbsp;действующие производства. Порой выставки идут одновременно с&nbsp;производственным процессом! Ярче всего это проявляется в&nbsp;программе арт-резиденций. Ее&nbsp;участники, художники из&nbsp;разных городов и&nbsp;стран, приезжают на&nbsp;предприятия, чтобы погрузиться в&nbsp;индустриальный Урал и&nbsp;вживую познакомиться с&nbsp;производством. Созданные ими произведения позволяют почувствовать красоту в&nbsp;деятельности заводов и&nbsp;взглянуть по-новому на&nbsp;особенности уральской жизни. Такие культурные проекты выявляют малоизвестные сюжеты в&nbsp;промышленных городах, рассказывают интересные истории об&nbsp;этих местах и&nbsp;привлекают сюда туристов и&nbsp;новые культурные события.</p>
+                     </div>
+                </div>
+                <div class="about_long_row">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
             </div>
         </div>
         <footer>
             <div class="footer_up"></div>
             <div class="footer_down">
-                <img class="logo_large" src="./public/image/logo_biennial_red.svg"></img>
+                <img class="logo_large" src="./public/images/logo_biennial_red.svg"></img>
             </div>
         </footer>
     </body>
