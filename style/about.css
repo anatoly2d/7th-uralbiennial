@@ -1,6 +1,3 @@
-.about {
-	margin: 5rem .75rem 5rem .75rem; 
-}
 .about h1 {
 	font-size: 7vw;
 	text-transform: uppercase;
@@ -142,9 +139,6 @@
 
 /* 480 ***************************************/
 @media (max-width: 480px) {
-	.about {
-		margin: 10rem .5rem 5rem .5rem; 
-	}
 	.about h1 {
 		font-size: 32px; 
 	}

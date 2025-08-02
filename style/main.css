@@ -351,6 +351,9 @@ body.inner-page .mobile-menu-toggle span {
 .col_3 {}
 .col_4 {}
 .col_5 {}
+.about {
+	margin: 5rem .75rem 5rem .75rem; 
+}
 /***************** Main *****************/
 .link_more {
 	font-family: 'IBM Plex Mono', monospace;
@@ -503,6 +506,9 @@ footer a {
  	p {
  		font-size: 13px;
  	}
+	.about {
+		margin: 10rem .5rem 5rem .5rem; 
+	}
  	.row {
  		display: block;
  	}
