@@ -6,7 +6,6 @@
 	text-transform: uppercase;
 	color: #fff;
 }
-
 .introLogo {
 	position: absolute;
 	margin: auto 0;
@@ -19,7 +18,6 @@
 	z-index: 10; 
 	justify-content: space-between; 
 }
-
 .introTextLeft {
 	object-fit: center;   
 }
@@ -27,10 +25,10 @@
 .introPicLogo{
 	width: 40%;
 }
-
 .introTextRight {
 	object-fit: center;
 	text-align: right;  
+	opacity: .5;
 }
 .cityMenu {
 	display: flex;
@@ -41,7 +39,6 @@
 	width: 100%;
 	z-index: 100;
 }
-
 .cityMenu a {
 	text-transform: uppercase;
 	font-size: 2vw;
@@ -50,7 +47,6 @@
 	border-top: 1px solid #fff;
 	color: #fff;
 }
-
 .cityMenuItem {
 	width: 25%;
 }
@@ -66,7 +62,9 @@
 	margin: 0 .1em;
 	width: 5%;
 }
-
+.about_short h1 {
+	text-transform: uppercase;
+}
 .about_long {
 	margin: .75rem;
 }
@@ -105,14 +103,25 @@
 	.about_long_row {
 		display: block; 
 	}
+	.logo-small-text { 
+		margin: 0 .15rem 0 .15em;
+		width: 6.5%;
+	}
+	.about_long p { 
+		text-align: left; 
+	}
+	.logo-small-text { 
+		margin: 0 .15rem 0 .15em;
+		width: 6.75%;
+	}
 }
 
 
 /* 480 *************************************/
 @media (max-width: 480px) {
 	.logo-small-text { 
-		margin: 0 0 0 .3em;
-		width: 11%;
+		margin: 0 .3rem 0 .3em;
+		width: 13%;
 	}
 }
 

@@ -28,7 +28,7 @@
     <!-- js -->     
         <script type="text/javascript" src="./utils/menu2.js"></script>
     </head>
-    <body>
+    <body class="main-page">
         <header class="header" role="banner"> 
             <div class="header-container">
                 <a href="/" class="logo">
@@ -90,9 +90,11 @@
                 
             </div>
             <div class="about_short">
-                <h1>Арт-резиденции VII уральской индустриальной биеннале современного искусства<img src="./public/images/logo-small.svg" class="logo-small-text"> , которые пройдут в четырех городах Уральского региона, Уральского региона, под основной темой — наука и энергия.</h1>
-                <a href="./about" class="link_more">Подробнее<span></span></a>
-                <button class="btn_text"><a href="./about" class="link_more">Подробнее<span></span></a></button>
+                <h1>Арт-резиденции VII&nbsp;уральской индустриальной биеннале современного искусства<img src="./public/images/logo-small.svg" class="logo-small-text">, которые пройдут в&nbsp;четырех городах Уральского региона, Уральского региона, под&nbsp;основной темой&nbsp;&mdash; наука и&nbsp;энергия.</h1>
+                <div class="link_more">
+                    <p><a href="./about" class="link_more_icon mask-icon">Подробнее&nbsp;<img src="./public/images/arrow_link.svg" class="picLogo"></img></a></p>
+                </div>
+                <!-- <button class="btn_text"><a href="./about" class="link_more">Подробнее<span></span></a></button> -->
             </div>
             <div class="map"></div>
             <div class="about_long">
@@ -115,12 +117,10 @@
                 <div class="about_long_row">
                     <div class="col"></div>
                     <div class="col">
-                        <p>Чем заняться на биеннале. Мы в биеннале настроены на диалог с жителями городов, где проводятся проекты биеннале. Начиная с первых исследований, мы обращаемся к опыту и памяти людей и открыты к любым обсуждениям и совместным действиям. Вы можете быть просто свидетелем художественного процесса и зрителем итогового произведения, которое появится в вашем городе в результате арт-резиденции.
-Вы можете участвовать в исследовании и ходе арт-резиденции, встречаясь с куратором и художником.
-Вы можете посещать просветительские мероприятия – лекции, кинопоказы и другие произведения.</p>
+                        <p>Чем заняться на&nbsp;биеннале. Мы&nbsp;в&nbsp;биеннале настроены на&nbsp;диалог с&nbsp;жителями городов, где проводятся проекты биеннале. Начиная с&nbsp;первых исследований, мы&nbsp;обращаемся к&nbsp;опыту и&nbsp;памяти людей и&nbsp;открыты к&nbsp;любым обсуждениям и&nbsp;совместным действиям. Вы&nbsp;можете быть просто свидетелем художественного процесса и&nbsp;зрителем итогового произведения, которое появится в&nbsp;вашем городе в&nbsp;результате арт-резиденции. Вы&nbsp;можете участвовать в&nbsp;исследовании и&nbsp;ходе арт-резиденции, встречаясь с&nbsp;куратором и&nbsp;художником. Вы&nbsp;можете посещать просветительские мероприятия&nbsp;&mdash; лекции, кинопоказы и&nbsp;другие произведения.</p>
                     </div>
                     <div class="col">
-                        <p>О событиях, проходящих в вашем городе, расскажем на этом сайте, в Вконтакте и телеграм-канале биеннале. </p>
+                        <p>О&nbsp;событиях, проходящих в&nbsp;вашем городе, расскажем на&nbsp;этом сайте, в&nbsp;<a href="">Вконтакте и&nbsp;телеграм-канале биеннале.</p>
                     </div>
                     <div class="col"></div>
                 </div>
@@ -129,26 +129,26 @@
         <footer>
             <div class="footer_up">
                     <div class="col">
-                        <p>Автономная некоммерческая организация «Центр поддержки и развития современного искусства «ЗА АРТ»</p> 
-                        <p>620014, г. Екатеринбург, ул. Ленина, д. 50, офис 232</p>
+                        <p>Автономная некоммерческая организация &laquo;Центр поддержки и&nbsp;развития современного искусства &laquo;ЗА&nbsp;АРТ&raquo;</p> 
+                        <p>620014, г. Екатеринбург, ул. Ленина, д.&nbsp;50, офис 232</p>
                         <br>
                         <p><a href="mailto:info@uralbiennial.ru">info@uralbiennial.ru</a></p>
                         <p>+7 (000) 000-00-00</p>
                     </div>
                     <div class="col"></div>
                     <div class="col">
-                        <a href="#">Арт-резиденции</a>
-                        <a href="#">Магнитогорск</a>
-                        <a href="#">Миасс</a>
-                        <a href="#">Рефтинский</a>
-                        <a href="#">Пороги</a>
-                        <a href="#">О биеннале</a>
-                        <a href="#">Как связаться</a>
+                        <a href="./art-residence">Арт-резиденции</a>
+                        <a href="./magnitogorsk">Магнитогорск</a>
+                        <a href="./miass">Миасс</a>
+                        <a href="./reftinskiy">Рефтинский</a>
+                        <a href="./porogi">Пороги</a>
+                        <a href="./about">О биеннале</a>
+                        <!-- <a href="./contacts">Как связаться</a> -->
                     </div>
                     <div class="col">
-                        <a href="#">VK</a>
-                        <a href="#">Telegram</a>
-                        <a href="#">Max</a>
+                        <a href="" target="_blank">VK</a>
+                        <a href="#" target="_blank">Telegram</a>
+                        <!-- <a href="#" target="_blank">Max</a> -->
                     </div>
             </div>
             <div class="footer_down">
@@ -168,8 +168,8 @@
                     </div>
                 </div> 
                 <img class="logo_large" src="./public/images/logo_biennial_red.svg"></img>
-            </div>
-            </div>
+            </div> 
+             <!-- Yandex.Metrika counter --> <script type="text/javascript">     (function(m,e,t,r,i,k,a){         m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};         m[i].l=1*new Date();         for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}         k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)     })(window, document,'script','https://mc.yandex.ru/metrika/tag.js', 'ym');      ym(70074715, 'init', {clickmap:true, accurateTrackBounce:true, trackLinks:true}); </script> <noscript><div><img src="https://mc.yandex.ru/watch/70074715" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->   
         </footer>
     </body>
 </html>
