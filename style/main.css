@@ -295,6 +295,10 @@ nav li {}
 	width: 100%;
 	display: block;
 } 
+.colFlex {
+	display: flex;
+	width: 100%;
+}
 .col_1 {}
 .col_2 {}
 .col_3 {}

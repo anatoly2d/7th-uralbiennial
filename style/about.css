@@ -1,0 +1,45 @@
+.about {
+	margin: 5rem .75rem 5rem .75rem; 
+}
+.about h1 {
+	font-size: 7vw;
+	text-transform: uppercase;
+}
+.about h2 {
+	font-size: 4vw;
+	text-transform: uppercase;
+}
+.about p {
+	text-transform: uppercase;
+	font-size: .7vw;
+	line-height: 1.2;
+}
+.about_title{
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+}
+
+.col_image_back {
+	background-image: url("../public/images/factory.svg");
+	display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    width: 100%;  
+    color: #fff;
+    padding: .5rem;
+}
+.col_image_back_text {
+	margin-top: 1rem;
+}
+
+.table_num {}
+
+.table_num_item_1 {}
+
+.table_num_item_2 {}
+
+.table_num_number{}
+
+.table_projects {} 
