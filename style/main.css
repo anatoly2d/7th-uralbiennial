@@ -114,21 +114,21 @@ h1 {
 	font-family: 'Inter Tight'; 
 	font-weight: 600;
 	font-size: 3vw;
-	letter-spacing: .1rem;
+	letter-spacing: -.0125rem;
 	line-height: 1;
 }
 h2 {
 	font-family: 'Inter Tight'; 
 	font-weight: 600;
 	font-size: 2.4vw;
-	letter-spacing: .1rem;
+	letter-spacing: -.0125rem;
 	line-height: 1;
 }
 h3 {
 	font-family: 'Inter Tight'; 
 	font-weight: 600;
 	font-size: 2vw;
-	letter-spacing: .1rem;
+	letter-spacing: -.0125rem;
 	line-height: 1;
 }
 p {
@@ -138,7 +138,6 @@ p {
 	line-height: 1;
 	margin-bottom: .5rem;
 	margin-top: .5rem;
-
 }
 a {
 	text-decoration: none;
@@ -149,7 +148,6 @@ a:hover {
 	text-decoration: none;
 	color: #111111;
 }
-
 button {}
 button .btn_text {
 	background: none;
@@ -157,6 +155,12 @@ button .btn_text {
 .btn_text span {
 	background-image: url(./public/images/arrow_link.svg);
 }
+nav ul {}
+nav li {}
+.picLogo {
+	width: 100%;
+}
+
 
 /***************** Menu *****************/
 .nav {}
@@ -285,9 +289,11 @@ button .btn_text {
 /***************** Grids *****************/
 .row {
 	display: flex;
+	width: 100%;
 }
 .col {
 	width: 100%;
+	display: block;
 } 
 .col_1 {}
 .col_2 {}
@@ -295,15 +301,75 @@ button .btn_text {
 .col_4 {}
 .col_5 {}
 /***************** Main *****************/
-nav ul {}
-nav li {}
 .link_more {
 	font-family: 'IBM Plex Mono', monospace;
 	text-transform: uppercase;
 	font-size: .8vw;
+	margin-top: 2rem;
+}
+.link_more span {}
+.mainVideo {
+	display: block;
+	width: 100%;
+	height: 100%;
+	max-height: 100vh;
+	object-fit: cover;
+
 }
 /***************** Footer *****************/
-footer {}
+footer {
+	padding: .75rem;
+}
+footer p {
+	text-transform: uppercase;
+	line-height: 1.3;
+	margin: 0;
+}
+footer a {
+	text-transform: uppercase;
+	display: block;
+}
+.footer_up {
+	display: flex;
+	margin: 3rem 0;
+	font-family: 'IBM_mono';
+	font-weight: 600;
+	font-size: .9vw;
+}
+.footer_down {
+	display: block;
+	width: 100%;
+	margin-top: 3rem;
+}
+.footer_down a {
+	font-family: 'IBM_mono';
+	font-weight: 400;
+	font-size: .9vw;
+}
+.copyright {
+	display: flex;
+	width: 100%;
+} 
+.footer_down .col {
+	display: flex;
+	justify-content: space-between;
+} 
+.colDown_1 {
+	display: flex;
+	width: auto;
+}
+.colDown_2 {
+	display: block;
+	width: auto;
+	text-align: right; 
+}
+.footer_down_link {
+	margin-right: 2rem;
+}
+.logo_large {
+	width: 100%;
+	margin-top: 2rem;
+}
 
 /***************** Cookies ****************/
 .cookies {}
@@ -377,13 +443,34 @@ footer {}
     .mobile-menu-toggle.active span {
         background-color: #FF553B !important;
     }
-/*
-    .header.scrolled .nav-list {
-    	top: 60px;
+    body {
+    	font-size: 13px;
     }
-    .logo-normal { 
-  		height: 2rem; 
-	}*/
+ 	h1 {
+ 		font-size: 24px;
+ 	}
+ 	p {
+ 		font-size: 13px;
+ 	}
+ 	.footer_up {
+		display: block; 
+		font-size: 13px;
+	}
+	.footer_up .col {
+		margin-top: 2rem;
+	}
+	.footer_down a { 
+		font-size: 13px;
+	}
+	.copyright {
+		display: block;
+	}
+	.colDown_1 {
+		display: block;
+	}
+	.footer_down .col {
+		display: block; 
+	} 
 }
 
 /* 480 ***************************************/
