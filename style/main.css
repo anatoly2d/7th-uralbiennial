@@ -622,8 +622,7 @@ footer a {
 	footer p {
 		font-size: 11px;
 	}
- 	.footer_up {
-		display: block; 
+ 	.footer_up { 
 		font-size: 11px;
 	}
 	.footer_up .col {
@@ -655,6 +654,7 @@ footer a {
 		font-size: 11px;
 	}
 	.footer_up { 
+		display: block;
 		font-size: 13px;
 		margin: 2rem 0;
 	}

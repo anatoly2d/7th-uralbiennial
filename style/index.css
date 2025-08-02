@@ -132,6 +132,17 @@
 		margin: 0 .15rem 0 .15em;
 		width: 6.75%;
 	}
+	.main_text_grid_1 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.main_text_grid_1 .col {
+		margin-bottom: 1rem;
+		padding-right: 1rem;
+	}
+	.main_text_grid_2 .col {
+		margin-bottom: 1rem;
+		padding-right: 1rem;
+	}
 }
 
 
@@ -152,9 +163,11 @@
 	}
 	.main_text_grid_1 .col {
 		margin-bottom: 1rem;
+		padding-right: 0;
 	}
 	.main_text_grid_2 .col {
 		margin-bottom: 1rem;
+		padding-right: 0;
 	}
 }
 
