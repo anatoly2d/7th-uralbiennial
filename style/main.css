@@ -273,30 +273,30 @@ nav li {}
     display: none;
     background: none;
     border: none;
-    width: 30px;
-    height: 24px;
+    width: 32px;
+    height: 18px;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    padding: 0;
+    padding: .4rem 0 0 0;
     z-index: 1001;
     position: relative;
     transition: transform 0.3s ease;
 }
 .mobile-menu-toggle span {
   	display: block;
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
-    transform-origin: center;
-    border-radius: 0;
+	width: 100%;
+	height: .15rem;
+	background-color: #fff;
+	transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	transform-origin: center;
+	border-radius: 0;
 }
 .header.scrolled .mobile-menu-toggle span {
   	background-color: #FF553B;
 }
 /* Анимация иконки в крестик */
-.mobile-menu-toggle.active span:nth-child(1) {
+/*.mobile-menu-toggle.active span:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
 }
 .mobile-menu-toggle.active span:nth-child(2) {
@@ -305,6 +305,25 @@ nav li {}
 }
 .mobile-menu-toggle.active span:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
+}*/
+ 
+/* Позиционируем линии */
+.mobile-menu-toggle span:first-child {
+  transform: translateY(0);
+}
+.mobile-menu-toggle span:last-child {
+  transform: translateY(0);
+}
+/* Анимация в крестик */
+.mobile-menu-toggle.active span:first-child {
+  transform: translateY(4.75px) rotate(45deg);
+}
+.mobile-menu-toggle.active span:last-child {
+  transform: translateY(-4.75px) rotate(-45deg);
+}
+/* Для внутренних страниц */
+body.inner-page .mobile-menu-toggle span {
+  background-color: #FF553B;
 }
 /* Сразу компактный стиль */
 body.inner-page .header {
@@ -312,22 +331,18 @@ body.inner-page .header {
   background-color: #fff; 
   border-bottom: 1px solid #FF553B;
 }
-
 /* Сразу маленький логотип */
 body.inner-page .logo-large {
   display: none;
 }
-
 body.inner-page .logo-small {
   display: block;
   opacity: 1;
 }
-
 /* Сразу оранжевые пункты меню */
 body.inner-page .nav-list a {
   color: #FF553B;
 }
-
 /* Сразу оранжевая иконка меню */
 body.inner-page .mobile-menu-toggle span {
   background-color: #FF553B;
@@ -518,7 +533,7 @@ footer a {
         left: 0;
         width: 100%;
         height: 100vh;
-        background-color: #fff;
+        background-color: #121212;
         flex-direction: column; 
         justify-content: end;
 		padding: 0 0 12rem .25rem; 
@@ -547,11 +562,11 @@ footer a {
     .nav-list.active li:nth-child(2) { transition-delay: 0.24s easy-both; }
     .nav-list.active li:nth-child(3) { transition-delay: 0.36s easy-both; }
     .nav-list a {
-        color: #FF553B;
-        font-size: 30px;
+        color: #fff;
+        font-size: 36px;
         font-weight: 600;
         display: inline-block;
-        padding: 8px;
+        padding: 2px;
     }
     .nav-list a span {
     	zoom: .4;
@@ -561,7 +576,8 @@ footer a {
     }
     /* Крестик всегда оранжевый в открытом меню */
     .mobile-menu-toggle.active span {
-        background-color: #FF553B !important;
+        background-color: #ccc;
+        /*background-color: #FF553B !important;*/
     } 
  	h1 {
  		font-size: 26px;
@@ -612,7 +628,7 @@ footer a {
 		font-size: 11px;
 	}
 	.footer_up { 
-		font-size: 11px;
+		font-size: 13px;
 	}
 	.footer_menu a { 
 		font-size: 13px;
