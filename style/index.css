@@ -84,8 +84,6 @@
 	display: flex;
 	gap: .5rem;
 }
-
-
 .main_text_grid_1 {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -113,6 +111,7 @@
 	}
 	.cityMenu {
 		display: grid;
+		padding-bottom: 2.5rem;
 	}
 	.cityMenu a {
 		font-size: 20px;
@@ -141,6 +140,21 @@
 	.logo-small-text { 
 		margin: 0 .3rem 0 .3em;
 		width: 13%;
+	}
+	.about_short {
+		margin: 1rem .5rem 5rem .5rem;
+	}
+	.about_long {
+		margin: .5rem;
+	}
+	.main_text_grid_1 {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.main_text_grid_1 .col {
+		margin-bottom: 1rem;
+	}
+	.main_text_grid_2 .col {
+		margin-bottom: 1rem;
 	}
 }
 
