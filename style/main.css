@@ -184,8 +184,8 @@ nav li {}
   	padding: 0; 
 }
 .header-border {
-	opacity: 0;
-	padding: 0 0 .5rem 0;
+	opacity: 0; 
+	margin: .5rem .75rem 0 .75rem;
   	border-bottom: 1px solid #fff;
 }
 .header-border.scrolled {
@@ -216,9 +216,14 @@ nav li {}
 }
 .header.scrolled .logo-normal {
   	opacity: 0;
+  	transition: all 0.68s cubic-bezier(0.01, 0.01, 0.01, 0.12);
 }
 .header.scrolled .logo-small {
-  	opacity: 1;
+  	opacity: 1; 
+}
+.header.scrolled .logo {
+  	height: 2.3rem; 
+  	transition: all 0.68s cubic-bezier(0.01, 0.01, 0.01, 0.12);
 }
 .nav-list {
   	display: flex;
@@ -286,6 +291,37 @@ nav li {}
 .mobile-menu-toggle.active span:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
 }
+/* Сразу компактный стиль */
+body.inner-page .header {
+  padding: .5rem .75rem 0 .75rem;
+  background-color: #fff; 
+  border-bottom: 1px solid #FF553B;
+}
+
+/* Сразу маленький логотип */
+body.inner-page .logo-large {
+  display: none;
+}
+
+body.inner-page .logo-small {
+  display: block;
+  opacity: 1;
+}
+
+/* Сразу оранжевые пункты меню */
+body.inner-page .nav-list a {
+  color: #FF553B;
+}
+
+/* Сразу оранжевая иконка меню */
+body.inner-page .mobile-menu-toggle span {
+  background-color: #FF553B;
+}
+.inner-page.header.scrolled .logo {
+  	height: 2.3rem; 
+}
+
+
 /***************** Grids *****************/
 .row {
 	display: flex;
