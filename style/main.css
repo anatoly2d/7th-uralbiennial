@@ -131,6 +131,13 @@ h3 {
 	letter-spacing: -.0125rem;
 	line-height: 1;
 }
+h4 {
+	font-family: 'Inter Tight'; 
+	font-weight: 600;
+	font-size: 2vw;
+	letter-spacing: -.0125rem;
+	line-height: 1;
+}
 p {
 	font-family: 'IBM Plex Mono', monospace;
 	font-size: .75vw;
@@ -335,6 +342,10 @@ body.inner-page .mobile-menu-toggle span {
 	display: flex;
 	width: 100%;
 }
+.col_hide {
+	display: block;
+	width: 100%;
+}
 .col_1 {}
 .col_2 {}
 .col_3 {}
@@ -492,6 +503,12 @@ footer a {
  	p {
  		font-size: 13px;
  	}
+ 	.row {
+ 		display: block;
+ 	}
+ 	.col_hide {
+		display: none; 
+	}
  	.footer_up {
 		display: block; 
 		font-size: 13px;
