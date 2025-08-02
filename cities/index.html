@@ -28,18 +28,44 @@
     <!-- js -->     
         <script type="text/javascript" src="../utils/menu2.js"></script>
     </head>
-    <body>
-        Cities
+    <body class="inner-page">
+        <header class="header" role="banner"> 
+            <div class="header-container">
+                <a href="/" class="logo">
+                  <img src="../public/images/logo-normal.svg" class="logo-normal">
+                  <img src="../public/images/logo-small.svg" class="logo-small"> 
+                </a>
+                <nav class="nav" aria-label="Основное меню">
+                    <button class="mobile-menu-toggle" 
+                          aria-expanded="false" 
+                          aria-controls="main-nav"
+                          aria-label="Открыть меню">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </button>
+                    <ul class="nav-list" id="main-nav" role="menubar">
+                        <li role="none"><a href="../art-residence" role="menuitem" class="menuItem">Арт-резиденции</a></li>
+                        <li role="none"><a href="../cities" class="menuItem" role="menuitem">Города <span>4</span></a></li>
+                        <li role="none"><a href="../about" class="menuItem" role="menuitem">О биеннале</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-border" role="line_border"></div>
+        </header> 
+        <main class="page-in">
+            v        Cities
+        </main>
         <footer>
             <div class="footer_up">
-                    <div class="col">
-                        <p>Автономная некоммерческая организация &laquo;Центр поддержки и&nbsp;развития современного искусства &laquo;ЗА&nbsp;АРТ&raquo;</p> 
-                        <p>620014, г. Екатеринбург, ул. Ленина, д.&nbsp;50, офис 232</p>
-                        <br>
-                        <p><a href="mailto:info@uralbiennial.ru">info@uralbiennial.ru</a></p>
-                    </div>
-                    <div class="col"></div>
-                    <div class="col">
+                <div class="col">
+                    <p>Автономная некоммерческая организация &laquo;Центр поддержки и&nbsp;развития современного искусства &laquo;ЗА&nbsp;АРТ&raquo;</p><br> 
+                    <p>620014, г. Екатеринбург, ул. Ленина, д.&nbsp;50, офис 232</p>
+                    <p><a href="mailto:info@uralbiennial.ru">info@uralbiennial.ru</a></p>
+                </div>
+                <div class="col"></div>
+                <div class="col">
+                    <div class="footer_menu">
                         <a href="../art-residence">Арт-резиденции</a>
                         <a href="../magnitogorsk">Магнитогорск</a>
                         <a href="../miass">Миасс</a>
@@ -48,11 +74,14 @@
                         <a href="../about">О биеннале</a>
                         <!-- <a href="./contacts">Как связаться</a> -->
                     </div>
-                    <div class="col">
+                </div>
+                <div class="col">
+                    <div class="footer_menu">
                         <a href="https://vk.com/uralbiennial" target="_blank">VK</a>
                         <a href="https://t.me/uralimmortalart" target="_blank">Telegram</a>
                         <!-- <a href="#" target="_blank">Max</a> -->
                     </div>
+                </div>    
             </div>
             <div class="footer_down">
                 <div class="copyright">

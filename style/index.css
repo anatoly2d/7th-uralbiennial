@@ -86,6 +86,20 @@
 }
 
 
+.main_text_grid_1 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	margin-bottom: .15rem;
+}
+.main_text_grid_2 {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: 1fr;
+} 
+
+
+
 /* 768 ***************************************/
 @media (max-width: 768px) {
 	.introTextLeft {

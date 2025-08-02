@@ -1,24 +1,24 @@
-.about h1 {
+.page-in h1 {
 	font-size: 7vw;
 	text-transform: uppercase;
 }
-.about h2 {
+.page-in h2 {
 	font-size: 5vw;
 	text-transform: uppercase;
 }
-.about h3 { 
+.page-in h3 { 
 	font-weight: 700;
 	text-transform: uppercase;
 }
-.about h4 {
+.page-in h4 {
 	font-size: 3.4vw;
 	font-weight: 600;
 	text-transform: uppercase;
 }
-.about p {
+.page-in p {
 	text-transform: uppercase;
-	font-size: .7vw;
-	line-height: 1.2;
+	line-height: 1.3;
+	letter-spacing: .0125rem;
 }
 .about_title{
 	margin-top: 4rem;
@@ -46,16 +46,15 @@
 	background-position: center; 
 	display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0;
     grid-row-gap: 0;
     width: 100%;  
     color: #fff;
     padding: .5rem;
 }
-.col_image_back_text {
-	margin-top: 1rem;
-	text-align: justify;
+.col_image_back_text { 
+	text-align: justify; 
 }
 .col_text {
 	padding-right: 1rem;
@@ -119,7 +118,7 @@
 
 /* 768 ***************************************/
 @media (max-width: 768px) {
-	.about p { 
+	.page-in p { 
 		font-size: 13px; 
 		line-height: 1.3;
 		letter-spacing: .025rem;
@@ -135,21 +134,30 @@
 		margin-top: 5rem;
 		margin-bottom: 4rem;
 	}
+	.col_image_back {
+		padding: 16rem 0 0 0;
+	}
+	.table_projects_item_1 {
+		grid-template-columns: 1fr 3fr repeat(2, 1fr);
+	}
 }
 
 /* 480 ***************************************/
 @media (max-width: 480px) {
-	.about h1 {
+	.page-in h1 {
 		font-size: 32px; 
 	}
-	.about h2 {
+	.page-in h2 {
 		font-size: 28px; 
 	}
-	.about h3 { 
-		font-size: 18px; 
+	.page-in h3 { 
+		font-size: 20px; 
 	}
-	.about h4 {
+	.page-in h4 {
 		font-size: 30px; 
+	}
+	.page-in p {
+		font-size: 12px; 
 	}
 	.subtitle {
 		width: 100%; 
@@ -170,6 +178,15 @@
 	}
 	.table_projects_num {
 		margin-bottom: .5rem;
+	}
+	.table_projects_name {
+		margin-bottom: 1rem;
+	}
+	.table_projects_place_info {
+		display: none;
+	}
+	.table_projects_artist {
+		margin-top: 1rem;
 	}
 }
 
